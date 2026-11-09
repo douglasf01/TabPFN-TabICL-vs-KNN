@@ -1,0 +1,27 @@
+[project]
+name = "tabknn"
+version = "0.1.0"
+description = "SSY340 project: comparing TabPFN and TabICL with KNN"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "openml",
+    "matplotlib",
+    "scipy",
+]
+
+[project.optional-dependencies]
+# Heavy (pulls torch); install with: uv sync --extra foundation
+foundation = [
+    "tabpfn",
+    "tabicl",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["tabknn"]

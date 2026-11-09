@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "validated_utc": "2026-10-19T06:06:07.830690+00:00",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "n_estimators": 1,
+  "datasets": [
+    "blood-transfusion",
+    "diabetes",
+    "maternal-health-risk",
+    "credit-g",
+    "qsar-biodeg"
+  ],
+  "ks": [
+    5,
+    10,
+    25,
+    50
+  ],
+  "baseline_runs": 120,
+  "knn_grid_runs": 160,
+  "attention_runs": 80,
+  "attention_layer_k_summaries": 5760,
+  "restricted_context_runs": 320,
+  "completed_query_checkpoints": 320,
+  "undefined_query_layer_rank_correlations": 0,
+  "protocol": "shared stratified 80/20 splits; train-only preprocessing; no test-set tuning",
+  "limitations": [
+    "Overlapping splits are not independent replications",
+    "Duplicates retained",
+    "Single-class/constant-context fallbacks counted",
+    "Attention measures association, not causal importance"
+  ]
+}
